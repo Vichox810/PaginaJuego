@@ -81,6 +81,18 @@ main {
 }
 
 
+#video {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#video iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+
 #juegos {
     margin-bottom: 40px;
 }
