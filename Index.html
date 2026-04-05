@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BichoJuegos</title>
+    <link rel="stylesheet" href="Pagina_videojuegos.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>BichoJuegos</h1>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Bienvenido a BichoJuegos</h2>
+            <p>¡Tienda online con los mejores precios de Chile!</p>
+        </section>
+
+        <section id="juegos">
+            <h2>Nuestros Videojuegos</h2>
+            <div class="Juegos-container">
+                <div class="juego-card">
+                    <div class="juego-card__media">
+                        <img class="juego-card__image" src="rise-of-the-tomb-raider.webp" alt="Videojuego-Lara">
+                        <video class="juego-card__video" muted autoplay loop playsinline preload="auto">
+                            <source src="Lara.1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="juego-card__info">
+                        <h3 class="juego-card__title">Rise of the Tomb Raider</h3>
+                        <p class="juego-card__description">Descripción breve: Juego de acción y aventura donde Lara Croft explora Siberia en busca de la ciudad perdida de Kitezh, combinando sigilo, combate y resolución de puzzles en entornos de mundo abierto.</p>
+                        <p class="juego-card__price">20.000 CLP</p>
+                        <button class="juego-card__button" onclick="window.location.href='Carrito.html'">Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <div class="juego-card">
+                    <div class="juego-card__media">
+                        <img class="juego-card__image" src="Kyle.jpg" alt="Videojuego 2">
+                        <video class="juego-card__video" muted autoplay loop>
+                            <source src="Dying.1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="juego-card__info">
+                        <h3 class="juego-card__title">Dying Light: The Beast 2</h3>
+                        <p class="juego-card__description">Descripción breve: es un juego de acción y supervivencia donde Kyle Crane regresa tras años de cautiverio para vengarse en un mundo abierto rural infestado de zombis, combinando parkour, combate cuerpo a cuerpo y una nueva habilidad de transformación bestial..</p>
+                        <p class="juego-card__price">46.990 CLP</p>
+                        <button class="juego-card__button" onclick="window.location.href='Carrito.html'">Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <div class="juego-card">
+                    <div class="juego-card__media">
+                        <img class="juego-card__image" src="ready-or-not.jpg" alt="Videojuego 3">
+                        <video class="juego-card__video" muted autoplay loop>
+                            <source src="Ready.1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="juego-card__info">
+                        <h3 class="juego-card__title">Ready or Not</h3>
+                        <p class="juego-card__description">Descripción breve: Un juego de estrategia en tiempo real donde los jugadores asumen el rol de agentes especiales en misiones de alto riesgo, requiriendo coordinación y toma de decisiones rápidas.</p>
+                        <p class="juego-card__price">25.500 CLP</p>
+                        <button class="juego-card__button" onclick="window.location.href='Carrito.html'">Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <div class="juego-card">
+                    <div class="juego-card__media">
+                        <img class="juego-card__image" src="Helldivers.webp" alt="Videojuego 4">
+                        <video class="juego-card__video" muted autoplay loop>
+                            <source src="Helldivers.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="juego-card__info">
+                        <h3 class="juego-card__title">Helldivers 2</h3>
+                        <p class="juego-card__description">Descripción breve: Un juego de acción en equipo donde los jugadores asumen el rol de soldados en misiones de alto riesgo, requiriendo coordinación y toma de decisiones rápidas.</p>
+                        <p class="juego-card__price">28.000 CLP</p>
+                        <button class="juego-card__button" onclick="window.location.href='Carrito.html'">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacto">
+        <h2 class="contacto-titulo"> FORMULARIO DE CONTACTO </h2>
+        <form class="formulario" id="formularioContacto">
+            <div class="form-grupo">
+                <label for="nombre">Nombre (mínimo 3 caracteres):</label>
+                <input type="text" id="nombre" name="nombre" minlength="3" required>
+                <span class="error" id="errorNombre"></span>
+            </div>
+            <div class="form-grupo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="errorEmail"></span>
+            </div>
+            <div class="form-grupo">
+                <label for="asunto">Asunto (mínimo 5 caracteres):</label>
+                <input type="text" id="asunto" name="asunto" minlength="5" required>
+                <span class="error" id="errorAsunto"></span>
+            </div>
+            <div class="form-grupo">
+                <label for="mensaje">Mensaje (mínimo 10 caracteres):</label>
+                <textarea id="mensaje" name="mensaje" rows="5" minlength="10" required></textarea>
+                <span class="error" id="errorMensaje"></span>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BichoJuegos. Todos los derechos reservados.</p>
+    </footer>
+    <script src="contacto.js"></script>
+</body>
+
+</html>
