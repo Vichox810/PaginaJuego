@@ -84,12 +84,17 @@ main {
 #video {
     text-align: center;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-#video iframe {
+#video iframe, #video video {
     max-width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
+    flex: 0 0 150px;
 }
 
 
@@ -389,4 +394,15 @@ textarea.invalid {
 
 .success-message.visible {
     display: block;
+}
+
+input[type="checkbox"] {
+  display: block; 
+}
+
+
+label[for="terminos"] {
+    align-items: center;
+    gap: 10px;
+    justify-self: start;
 }

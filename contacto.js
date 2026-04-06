@@ -29,6 +29,11 @@ document.addEventListener('DOMContentLoaded', function () {
         input.classList.remove('invalid');
     }
 
+    function mostrarError(checkbox, mensaje, elementoError) {
+        elementoError.textContent = mensaje;
+        checkbox.classList.add('invalid');
+    }
+
     function limpiarMensajes() {
         limpiarError(form.nombre, errorNombre);
         limpiarError(form.email, errorEmail);

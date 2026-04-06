@@ -25,7 +25,6 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/RkC0l4iekYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <video width="560" height="315" controls autoplay muted>
                     <source src="Dying Light.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
                 </video>
             </div>
         </section>
@@ -103,6 +102,10 @@
                 <span class="error" id="errorNombre"></span>
             </div>
             <div class="form-grupo">
+                <label for="apellido">Apellido (mínimo 3 caracteres):</label>
+                <input type="text" id="apellido" name="apellido" minlength="3" required>
+                <span class="error" id="errorApellido"></span>
+            <div class="form-grupo">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 <span class="error" id="errorEmail"></span>
@@ -117,6 +120,10 @@
                 <textarea id="mensaje" name="mensaje" rows="5" minlength="10" required></textarea>
                 <span class="error" id="errorMensaje"></span>
             </div>
+            <label for="terminos">
+                <span>Acepto los términos y condiciones</span>
+                <input type="checkbox" id="terminos" name="terminos" required>
+            </label>
             <button type="submit" class="btn-enviar">Enviar</button>
         </form>
     </section>
